@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    android:orientation="vertical"
+    >
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="79dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="2dp"
+        android:src="@drawable/ic_chevron"/>
+
+    <TextView
+        android:id="@+id/t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="50dp"
+        android:text="Title"
+        android:textColor="@color/blackcolor"
+        android:textSize="22sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginVertical="30dp"
+
+        android:text="Descripcion"
+        android:textColor="@color/lightgray"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="70dp">
+
+    </TextView>
+</androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:padding="16dp">
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Guardar"
+    >
+
+</Button>
+    </RelativeLayout>
+
+
+</LinearLayout>
