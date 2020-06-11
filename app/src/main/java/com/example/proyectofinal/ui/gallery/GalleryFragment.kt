@@ -1,5 +1,6 @@
 package com.example.proyectofinal.ui.gallery
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -16,6 +17,7 @@ import com.example.proyectofinal.ComidaViewModelFactory
 import com.example.proyectofinal.R
 import com.example.proyectofinal.data.ComidaDatabase
 import com.example.proyectofinal.data.ComidaRepository
+import com.google.android.material.snackbar.Snackbar
 
 class GalleryFragment : Fragment() {
 
@@ -47,5 +49,19 @@ class GalleryFragment : Fragment() {
 
 
         return root
+    }
+
+    fun onSNACK(view: View){
+        //Snackbar(view)
+        val snackbar = Snackbar.make(view, "Seleccion un tipo de producto",
+            Snackbar.LENGTH_LONG).setAction("Action", null)
+        snackbar.setActionTextColor(Color.BLUE)
+        val snackbarView = snackbar.view
+        snackbarView.setBackgroundColor(Color.LTGRAY)
+        val textView =
+            snackbarView.findViewById(com.google.android.material.R.id.snackbar_text) as TextView
+        textView.setTextColor(Color.BLUE)
+        textView.textSize = 28f
+        snackbar.show()
     }
 }
