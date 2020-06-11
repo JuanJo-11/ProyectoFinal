@@ -53,6 +53,8 @@ class MainActivity : AppCompatActivity() {
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
+
+
         val fab: FloatingActionButton = findViewById(R.id.fab)
         fab.setOnClickListener { view ->
           //  Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
@@ -134,7 +136,7 @@ class MainActivity : AppCompatActivity() {
 
 
         AsyncTask.execute {
-            var ksd: Array<Comida> =  comidaViewModel.comida1
+         /*   var ksd: Array<Comida> =  comidaViewModel.comida1
 
             for (item in ksd) {
                 val d = item
@@ -159,7 +161,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
 
-            //Log.e("dswd", ksd.)
+            //Log.e("dswd", ksd.)*/
 
         }
 

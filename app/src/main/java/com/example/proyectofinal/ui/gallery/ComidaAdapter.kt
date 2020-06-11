@@ -1,15 +1,17 @@
 package com.example.proyectofinal.ui.gallery
 
+import android.app.Activity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.proyectofinal.R
-import kotlinx.android.synthetic.main.fragment_gallery.view.*
 import kotlinx.android.synthetic.main.row.view.*
+
 
 class ComidaAdapter(val arrayList: ArrayList<Model>, val context: GalleryFragment) :
     RecyclerView.Adapter<ComidaAdapter.ViewHolder>() {
+  //  private List<>
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun binditems(model: Model){

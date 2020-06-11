@@ -7,6 +7,11 @@
         android:title="@string/action_settings"
         app:showAsAction="never" />
     <item
+        android:id="@+id/Contacto"
+        android:orderInCategory="100"
+        android:title="@string/contactanos"
+        app:showAsAction="never" />
+    <item
         android:id="@+id/guardarInterni"
         android:orderInCategory="100"
         android:title="Guardar Interno"

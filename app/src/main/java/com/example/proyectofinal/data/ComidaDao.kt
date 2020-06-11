@@ -15,11 +15,11 @@ interface ComidaDao {
     suspend fun agregarComida(comida: Comida)
 
     // select * from datos_alumno where ncontrol = :ncontrol
-    @Query(value = "SELECT * FROM datos_producto")
+    @Query(value = "SELECT * FROM datos_producto ")
     fun obtenerDatosComida(): LiveData<Comida>
 
     @Query(value = "SELECT * FROM datos_producto")
-    fun obtenerDatos(): Array<Comida>
+    fun obtenerDatos(): LiveData<Comida>
 
 //    @Query("DELETE FROM word_table")
  //   suspend fun deleteAll()

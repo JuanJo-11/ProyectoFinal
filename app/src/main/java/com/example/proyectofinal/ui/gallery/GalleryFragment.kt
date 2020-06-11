@@ -32,26 +32,19 @@ class GalleryFragment : Fragment() {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        //galleryViewModel =
-          //      ViewModelProvider(this).get(GalleryViewModel::class.java)
 
         val root = inflater.inflate(R.layout.row, container, false)
 
         val tvNombre = root.findViewById<TextView>(R.id.t)
         val tvPrecio = root.findViewById<TextView>(R.id.description)
-       // val tvDetalle = root.findViewById<TextView>(R.id.tvDetalle)
 
-        comidaViewModel.comida.observe(viewLifecycleOwner, Observer { comida ->
+         comidaViewModel.comida.observe(viewLifecycleOwner, Observer { comida ->
             tvNombre.text = comida.nombre
             tvPrecio.text = comida.precio.toString()
          //   tvDetalle.text = comida.detalle
         })
         //  val textView: TextView = root.findViewById(R.id.text_gallery)
 
-
-      //  galleryViewModel.text.observe(viewLifecycleOwner, Observer {
-        //    textView.text = it
-       // })
 
         return root
     }
